@@ -16,3 +16,6 @@ const productSchema = new mongoose.Schema({
     createdAt: {type: Date, default: Date.now},
     publishedAt: {type: Date, default: Date.now}
 })
+const productModel = mongoose.model("product", productSchema);
+
+export default productModel;
