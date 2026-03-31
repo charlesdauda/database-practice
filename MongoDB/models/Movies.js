@@ -13,3 +13,6 @@ const movieSchema = new mongoose.Schema({ //also works with const movieSchema = 
     isActive: {type: Boolean}, 
     comments: [{value: {type: String}, published: {type: Date, default: Date.now}}]
 })
+
+const movieModel = mongoose.model("movie", movieSchema);
+export default movieModel;
