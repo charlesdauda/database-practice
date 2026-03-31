@@ -1,5 +1,7 @@
 import express from "express";
 import connectDB from "./db/connectDB.js";
+import movieModel from "./models/movies.js";
+import productModel from "./models/Product.js";
 
 const app = express(); //Creating a server app with express
 const port = process.env.PORT || 8000; //run on a server or port 8000
